@@ -58,7 +58,7 @@ def load(filenames=None,
 
     Supported formats: hspy (HDF5), msa, Gatan dm3, Ripple (rpl+raw),
     Bruker bcf and spx, FEI ser and emi, SEMPER unf, EMD, EDAX spd/spc,
-    tif, and a number of image formats.
+    Oxford Instruments (h5oina), tif, and a number of image formats.
 
     Any extra keyword is passed to the corresponding reader. For
     available options see their individual documentation.
@@ -289,7 +289,8 @@ def load_single_file(filename, **kwds):
     """
     Load any supported file into an HyperSpy structure
     Supported formats: netCDF, msa, Gatan dm3, Ripple (rpl+raw),
-    Bruker bcf, FEI ser and emi, EDAX spc and spd, hspy (HDF5), and SEMPER unf.
+    Bruker bcf, FEI ser and emi, EDAX spc and spd, hspy (HDF5), SEMPER unf
+    and Oxford Instruments (h5oina).
 
     Parameters
     ----------
